@@ -240,9 +240,27 @@
                 <label for="myPhone">Phone Number<span class="required">*</span></label> 
                 <input type="tel" name="myPhone" id="myPhone" autocomplete="tel" placeholder="Enter telephone number" required>
                
-                
-                Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
-                Travel Time (Fall, Winter, Spring, Summer, Flexible)
+                <label for="myDestination">Destination<span class="required">*</span></label>
+                <select name="myDestination" id="myDestination" required>
+                 <option value="">Please choose a Destination</option>
+                 <option value="BCN">Barcelona</option>
+                 <option value="GRX">Granada</option> 
+                 <option value=IBZ">Ibiza</option>
+                 <option value="MAD">Madrid</option>
+                 <option value="">Majorca</option> 
+                 <option value="">Seville</option>
+                 <option value="">Tenerife</option>
+                 <option value="">Valencia</option>
+                </select>
+
+                <label for="myTime">Travel Time<span class="required">*</span></label>
+                <select name="myTime" id="myTime" required>
+                    <option value="">Fall</option>
+                    <option value="">Winter</option>
+                    <option value="">Spring</option>
+                    <option value="">Summer</option>
+                    <option value="">Flexible</option>
+                </select>
             </form>
     </section>
 </main>
