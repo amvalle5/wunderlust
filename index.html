@@ -219,15 +219,28 @@
     <section>
         <h3>Contact Us</h3>
             <form>
-                <label for="firstName">First Name</label> 
+                <label for="firstName">First Name<span class="required">*</span></label> 
                 <input type="text" name="firstName" id="firstName" placeholder="Enter first name" autocomplete="name" required>
-                <label for="lastName">Last Name</label> 
+                <label for="lastName">Last Name<span class="required">*</span></label> 
                 <input type="text" name="lastName" id="lastName" placeholder="Enter last name" autocomplete="name" required>
+                
+                <fieldset>
+                    <legend>Contact Method<span class="required">*</span></legend>
+                    <input type="radio" name="contactPref" id="prefEmail" required checked>
+                    <label for="prefEmail">Email</label>
+                    <input type="radio" name="contactPref" id="prefText" required>
+                    <label for="prefText">Text</label>
+                    <input type="radio" name="contactPref" id="prefPhone" required>
+                    <label for="prefPhone">Phone</label>
+                </fieldset>
 
-                Contact Method (Email, Text, Phone)
-                Email Address (Enter Email)
-                Phone Number (Enter telephone number)
 
+                <label for="myEmail">Email Address<span class="required">*</span></label> 
+                <input type="email" name="myEmail" id="myEmail" placeholder="Enter Email" autocomplete="email" required>
+                <label for="myPhone">Phone Number<span class="required">*</span></label> 
+                <input type="tel" name="myPhone" id="myPhone" autocomplete="tel" placeholder="Enter telephone number" required>
+               
+                
                 Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
                 Travel Time (Fall, Winter, Spring, Summer, Flexible)
             </form>
