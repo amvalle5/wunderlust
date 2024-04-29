@@ -49,3 +49,197 @@ table {
 	border-spacing: 0;
 }
 
+:root{
+    --yellow: #F6D64A;
+    --teal: #55BCD5;
+    --purple: #9B26B0;
+    --blue: #499BD2;
+    --dark-gray: #222222;
+    --light-gray: #EAEAEA;
+    --white: #fff;
+    --black: #000;
+}
+
+html{
+	background-color: var(--white);
+	width: 414px;
+	margin: 0 auto;
+}
+
+body{
+	margin: 0 auto;
+	background-color: var(--white);
+	padding: 0 20px;
+}
+
+/* Skip links styles */
+#skip, .sr-only{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: left;
+	height: 1px;
+	overflow: hidden;
+}
+
+#skip:focus{
+	position: static;
+	width: auto;
+	height: auto;
+}
+
+/* Fonts */
+h1, h2, h3 {
+    font-family: "Moelle", cursive;
+}
+
+h4, p, q, small, nav, button, form {
+    font-family:"Montserrat", sans-serif;
+}
+
+h1{
+	font-weight: bold;
+	font-size: 45px;
+	line-height: 1em;
+}
+
+header {
+    background-image: linear-gradient(var(--teal),  var(--white));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; 
+}
+
+header p {
+	font-size: 18px;
+	width: 300px;
+	padding-bottom: 40px;
+}
+
+#logo img{
+	width: 140px;
+}
+
+p{
+	padding-left: 16px;
+	line-height: 1.5rem;
+}
+
+#menu-toggle{
+	display: block;
+	position: relative;
+	top: 50px;
+	left: 50px;
+	z-index: 1;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#toggle{
+	display: none;
+}
+
+nav{
+	position: relative;
+}
+
+nav label {
+	position: absolute;
+	top: -190px;
+	right: 34px;
+	cursor: pointer;
+	padding: 15px 60px;
+	background-color: var(--yellow);
+	color: var(--black);
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 12px;
+}
+
+nav ul{
+	display: none;
+}
+
+#toggle:checked label ul{
+	display: block;
+
+}
+
+h2{
+	font-size: 45px;
+	font-weight: bold;
+	padding-left: 20px;
+}
+
+#intro p{
+	padding-top: 10px;
+}
+
+#intro img{
+	width: 100%;
+	padding-bottom: 16px;
+}
+
+#plan{
+	background-color: var(--yellow);
+}
+
+#plan div{
+	padding-left: 32px;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+#plan h3{
+	font-size: 35px;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+}
+
+#plan section{
+	border: 4px solid var(--white);
+	padding: 10px;
+	width: 290px;
+	background-color: var(--teal);
+	border-radius: 5px;
+	padding-bottom: 20px;
+}
+
+#plan h4{
+	font-weight: bold;
+	font-size: 25px;
+	padding-bottom: 15px;
+}
+
+#plan img{
+	border: 1px solid red;
+}
+
+#testimonials{
+	padding: 30px;
+	text-align: center;
+}
+
+
+#testimonials h3{
+	font-weight: bold;
+	font-size: 35px;
+	text-align: left;
+}
+
+#testimonials h4{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 25px;
+
+}
+
+q{
+	font-style: italic;
+}
