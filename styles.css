@@ -68,7 +68,7 @@ html{
 
 body{
 	margin: 0 auto;
-	background-color: var(--white);
+	/* background-color: var(--white); */
 	padding: 0 20px;
 }
 
@@ -115,6 +115,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem; 
+	
 }
 
 header p {
@@ -272,6 +273,7 @@ h2{
 
 #testimonials img{
 	padding-top: 15px;
+	padding-bottom: -20px
 }
 
 #testimonials h3{
@@ -325,15 +327,15 @@ h2{
 	padding-top: 10px;
 	margin-left: 30px;
 	margin-right: 40px;
-	gap: 5px;
+	gap: 5px; 
 }
 
 #about h3{
 	font-weight: bolder;
-	font-size: 36px;
+	font-size: 50px;
 	padding-top: 30px;
 	margin-top: 10px;
-	padding-left: 15px;
+	padding-left: 25px;
 }
 
 #about img{
@@ -502,6 +504,10 @@ input[type="radio"] {
 	margin-bottom: 20px;
 }
 
+.custom-select select[name="destination"] {
+    width: 50%;
+}
+
 #mySubmit{
 	text-align: center;
 	padding: 10px;
@@ -663,7 +669,7 @@ footer a{
 
 	#about h3{
 		padding-left: 50px;
-		font-size: 40px;
+		font-size: 45px;
 	}
 
 	form{
@@ -703,5 +709,154 @@ footer a{
 		width: 1050px;
 	}
 
+	h1{
+		margin-right: 340px;
+		margin-top: -20px;
+	}
 
+	header p{
+		width: 600px;
+		margin-top: -40px;
+		position: static;
+		padding-left: 170px;
+		font-size: 13.5px;
+	}
+	nav{
+		position: relative;
+		top: -130px;
+		left: 508px;
+		scale:70%
+	}
+	#logo img{
+		position: relative;
+		top: -10px;
+		right: 40px;
+	}
+
+	#intro p{
+		width:400px;
+	}
+	#img-grid{
+		margin-top: -250px;
+		width:550px;
+		margin-left: 450px;
+		padding-bottom: 50px;
+	}
+
+	#plan h3{
+		padding-top: 40px;
+		padding-left: 60px;
+		font-size: 25px;
+	}
+
+	#plan div{
+		grid-template-columns: repeat(4,1fr);
+		width:150px;
+		scale:65%;
+		gap: 40px;
+		margin-top:-40px;
+		margin-left: 403px;
+		justify-content: center;
+	}
+	/* #testimonials div{
+		grid-template-columns: repeat(4,1fr);
+		width:100%;
+		gap: 5px;
+		padding-left:20px;
+		padding-right: 20px; 
+	}*/
+		#about div{
+			padding-left:100px;
+			padding-right: 100px;
+			padding-bottom: 50px;
+		}
+
+		#about h3{
+			font-size: 30px;
+			padding-top:70px;
+		}
+
+		#names{
+			position: relative;
+			right: 185px;
+			width: 50%;
+		}
+		#nums fieldset{
+			position: relative;
+			left: 125px;
+			width: 70%;
+			top: -215px;
+			padding-bottom: 10px;
+		}
+		
+		#nums input[type="radio"] {
+			width: 40px;
+			height: 40px;
+			margin-right: 5px;
+		}
+		  
+		  input[type="radio"]::before {
+			width: 1.5em;
+			height: 1.5em;
+		  }
+		  
+		#nums input{
+			width: 50%;
+		}
+
+		#selects{
+			position: relative;
+			top: -530px;
+			left: 520px;
+		}
+
+		#selects select{
+			width: 45%;
+			height: 72px;
+		}
+
+		input[type=submit]{
+			margin-left: 60px;
+		}
+
+		#contact{
+			height: 400px;
+		}
+
+		#contact form{
+			height: 200px;
+		}
+
+		label[for="email"] {
+			position: relative;
+			top: -220px;
+			left: 125px
+		}
+
+		input[type="email"] {
+			position: relative;
+			top: -223px;
+			left: 125px;
+		}
+		label[for="phone"] {
+			position: relative;
+			top: -220px;
+			left: 125px
+		}
+
+		input[type="tel"] {
+			position: relative;
+			top: -223px;
+			left: 125px;
+		}
+
+		footer {
+			justify-content: end;
+		}
+		footer a {
+			margin: 0 2em;
+		}
+		footer p {
+			margin-right: auto;
+		}
 }
